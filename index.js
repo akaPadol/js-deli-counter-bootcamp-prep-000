@@ -9,7 +9,10 @@ function currentLine(arr){
 }
 
 function nowServing(arr){
-  return "Currently serving "+arr[0]+"."
+  if (!(arr[0]==="")){ return "There is nobody waiting to be served!"}
+  var serving = arr[0]
+  arr.shift()
+  return "Currently serving "+serving+"."
 }
 
 function takeANumber(arr,name){
