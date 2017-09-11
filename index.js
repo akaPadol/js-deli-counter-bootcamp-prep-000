@@ -29,7 +29,7 @@ function currentLine(arr){
 function nowServing(arr){
   return "Currently serving "+arr[0]+"."
 }
- 
+
 function takeANumber(arr,name){
   arr.push(name)
   return "Welcome, "+name+". You are number "+arr.length+" in line."
