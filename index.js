@@ -2,8 +2,9 @@ var katzDeli = [];
 
 function currentLine(arr){
   var res="The line is currently"
-  if(arr.length === 0 ){res +=" empty."
-return res
+  if(arr.length === 0 ){
+    res +=" empty."
+    return res
 }
   for (var i = 0;i<arr.length;++i){
     res+=((i===0 ? ": " : ", "))+(i+1)+". "+arr[i]
