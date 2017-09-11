@@ -21,7 +21,7 @@ currentLine(katzDeliLine); // "The line is currently: 1. Kent, 2. Matz"
 function currentLine(arr){
   var res="The line is currently:"
   for (var i = 0;i<arr.length;++i){
-    res+=((i===0 ? " " , ", "))+(i+1)+". "+arr[i]
+    res+=((i===0 ? " " : ", "))+(i+1)+". "+arr[i]
   }
   return res
 }
